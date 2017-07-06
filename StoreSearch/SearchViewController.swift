@@ -18,6 +18,7 @@ class SearchViewController: UIViewController {
     
     struct TableViewCellIdentifier {
         static let searchResultCell = "SearchResultCell"
+        static let nothingFoundCell = "NothingFoundCell"
     }
 
     override func viewDidLoad() {
@@ -25,8 +26,10 @@ class SearchViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         tableView.contentInset = UIEdgeInsets(top: 64, left: 0, bottom: 0, right: 0) // 下移整个TableView64px
         
-        let cellNib = UINib(nibName: TableViewCellIdentifier.searchResultCell, bundle: nil)
+        var cellNib = UINib(nibName: TableViewCellIdentifier.searchResultCell, bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: TableViewCellIdentifier.searchResultCell)
+        cellNib = UINib(nibName: TableViewCellIdentifier.nothingFoundCell, bundle: nil)
+        tableView.register(cellNib, forCellReuseIdentifier: TableViewCellIdentifier.nothingFoundCell)
         
         tableView.rowHeight = 80
     }
@@ -74,18 +77,16 @@ extension SearchViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCellIdentifier.searchResultCell, for: indexPath) as! SearchResultCell
-        
         if searchResults.count == 0 {
-            cell.nameLabel.text = "(Nothing found)"
-            cell.artistNameLabel.text = ""
+            return tableView.dequeueReusableCell(withIdentifier: TableViewCellIdentifier.nothingFoundCell, for: indexPath)
         } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCellIdentifier.searchResultCell, for: indexPath) as! SearchResultCell
             let searchResult = searchResults[indexPath.row]
             cell.nameLabel.text = searchResult.name
             cell.artistNameLabel!.text = searchResult.artistName
+            
+            return cell
         }
-        
-        return cell
     }
 }
 
