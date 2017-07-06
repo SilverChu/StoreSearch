@@ -31,7 +31,9 @@ class SearchViewController: UIViewController {
         cellNib = UINib(nibName: TableViewCellIdentifier.nothingFoundCell, bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: TableViewCellIdentifier.nothingFoundCell)
         
-        tableView.rowHeight = 80
+        tableView.rowHeight = 80 // 初始化table view的行高
+        
+        searchBar.becomeFirstResponder() // 默认打开APP就在搜索栏并弹出软键盘
     }
 
     override func didReceiveMemoryWarning() {

@@ -62,16 +62,16 @@
 		7BC011441F0BE382005EB73C /* StoreSearch */ = {
 			isa = PBXGroup;
 			children = (
-				7BC011451F0BE382005EB73C /* AppDelegate.swift */,
-				7BC011471F0BE382005EB73C /* SearchViewController.swift */,
-				7BC011491F0BE382005EB73C /* Main.storyboard */,
-				7BC0114C1F0BE382005EB73C /* Assets.xcassets */,
-				7BC0114E1F0BE382005EB73C /* LaunchScreen.storyboard */,
 				7BC011511F0BE382005EB73C /* Info.plist */,
+				7BC011451F0BE382005EB73C /* AppDelegate.swift */,
 				7B4D65541F0CCFA9004B8708 /* SearchResult.swift */,
-				7B4D65561F0CECF5004B8708 /* SearchResultCell.xib */,
 				7BB5695D1F0D3CD700577D79 /* SearchResultCell.swift */,
+				7BC011471F0BE382005EB73C /* SearchViewController.swift */,
+				7BC0114C1F0BE382005EB73C /* Assets.xcassets */,
 				7B8247B11F0DE53D005F58B1 /* NothingFoundCell.xib */,
+				7B4D65561F0CECF5004B8708 /* SearchResultCell.xib */,
+				7BC0114E1F0BE382005EB73C /* LaunchScreen.storyboard */,
+				7BC011491F0BE382005EB73C /* Main.storyboard */,
 			);
 			path = StoreSearch;
 			sourceTree = "<group>";
