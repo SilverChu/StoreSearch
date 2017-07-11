@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B129A9E1F1365C6003147C8 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B129A9D1F1365C6003147C8 /* LoadingCell.xib */; };
 		7B4D65551F0CCFA9004B8708 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4D65541F0CCFA9004B8708 /* SearchResult.swift */; };
 		7B4D65571F0CECF5004B8708 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B4D65561F0CECF5004B8708 /* SearchResultCell.xib */; };
 		7B8247B21F0DE53D005F58B1 /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B8247B11F0DE53D005F58B1 /* NothingFoundCell.xib */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B129A9D1F1365C6003147C8 /* LoadingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
 		7B4D65541F0CCFA9004B8708 /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		7B4D65561F0CECF5004B8708 /* SearchResultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
 		7B8247B11F0DE53D005F58B1 /* NothingFoundCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				7B4D65561F0CECF5004B8708 /* SearchResultCell.xib */,
 				7BC0114E1F0BE382005EB73C /* LaunchScreen.storyboard */,
 				7BC011491F0BE382005EB73C /* Main.storyboard */,
+				7B129A9D1F1365C6003147C8 /* LoadingCell.xib */,
 			);
 			path = StoreSearch;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			files = (
 				7BC011501F0BE382005EB73C /* LaunchScreen.storyboard in Resources */,
 				7BC0114D1F0BE382005EB73C /* Assets.xcassets in Resources */,
+				7B129A9E1F1365C6003147C8 /* LoadingCell.xib in Resources */,
 				7B4D65571F0CECF5004B8708 /* SearchResultCell.xib in Resources */,
 				7B8247B21F0DE53D005F58B1 /* NothingFoundCell.xib in Resources */,
 				7BC0114B1F0BE382005EB73C /* Main.storyboard in Resources */,
