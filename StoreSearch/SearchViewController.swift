@@ -53,6 +53,7 @@ class SearchViewController: UIViewController {
         return url!
     }
     
+    /*
     func performStoreRequest(with url: URL) -> String? {
         do {
             return try String(contentsOf: url, encoding: .utf8) // 以UTF-8的形式解析URL
@@ -61,12 +62,9 @@ class SearchViewController: UIViewController {
             return nil
         }
     }
+    */
     
-    func parse(json: String) -> [String: Any]? {
-        guard let data = json.data(using: .utf8, allowLossyConversion: false) else {
-            return nil
-        }
-        
+    func parse(json data: Data) -> [String: Any]? {
         do {
             return try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
         } catch {
@@ -237,27 +235,42 @@ extension SearchViewController: UISearchBarDelegate {
             hasSearched = true
             searchResults = []
             
-            let queue = DispatchQueue.global()
-            
-            queue.async {
-                let url = self.iTunesURL(searchText: searchBar.text!)
+            let url = iTunesURL(searchText: searchBar.text!)
+            let session = URLSession.shared
+            // 收到server端回复时调用completionHandler中方法
+            let dataTask = session.dataTask(with: url, completionHandler: {
+                data, response, error in
+                print("On main thread? " + (Thread.current.isMainThread ? "Yes" : "No"))
                 
-                print("\(url)")
-                
-                if let jsonString = self.performStoreRequest(with: url), let jsonDictionary = self.parse(json: jsonString) {
-                    self.searchResults = self.parse(dictionary: jsonDictionary)
-                    self.searchResults.sort(by: <)
-                    
-                    DispatchQueue.main.async {
-                        self.isLoading = false
-                        self.tableView.reloadData()
+                if let error = error {
+                    print("Failure! \(error)")
+                } else if let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 {
+                    if let data = data, let jsonDictionary = self.parse(json: data) {
+                        self.searchResults = self.parse(dictionary: jsonDictionary)
+                        self.searchResults.sort(by: <)
+                        
+                        DispatchQueue.main.async {
+                            print("On main thread? " + (Thread.current.isMainThread ? "Yes" : "No"))
+                            
+                            self.isLoading = false
+                            self.tableView.reloadData() // main thread渲染UI
+                        }
+                        
+                        return //跳出当前方法体
                     }
-                    return
+                } else {
+                    print("Failure! \(response!)")
                 }
+                
                 DispatchQueue.main.async {
+                    self.hasSearched = false
+                    self.isLoading = false
+                    self.tableView.reloadData()
                     self.showNetworkError()
                 }
-            }
+            })
+            
+            dataTask.resume()
         }
     }
     
