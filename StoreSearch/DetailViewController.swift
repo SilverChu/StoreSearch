@@ -59,6 +59,8 @@ class DetailViewController: UIViewController {
         if searchResult != nil {
             updateUI() // 展示相应数据
         }
+        
+        view.backgroundColor = UIColor.clear
     }
 
     override func didReceiveMemoryWarning() {
@@ -115,6 +117,14 @@ extension DetailViewController: UIViewControllerTransitioningDelegate {
     
     func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
         return DimmingPresentationController(presentedViewController: presented, presenting: presenting)
+    }
+    
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return BounceAnimationController()
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return SlideOutAnimationController()
     }
     
 }
