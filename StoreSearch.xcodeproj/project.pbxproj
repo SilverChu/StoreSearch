@@ -24,6 +24,7 @@
 		7BC011481F0BE382005EB73C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC011471F0BE382005EB73C /* SearchViewController.swift */; };
 		7BC0114B1F0BE382005EB73C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC011491F0BE382005EB73C /* Main.storyboard */; };
 		7BC0114D1F0BE382005EB73C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC0114C1F0BE382005EB73C /* Assets.xcassets */; };
+		7BDF0FE01F1D088200B21124 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF0FDF1F1D088200B21124 /* Search.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		7BC0114A1F0BE382005EB73C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7BC0114C1F0BE382005EB73C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BC011511F0BE382005EB73C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BDF0FDF1F1D088200B21124 /* Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				7B1CD4B61F18CDB40024CE70 /* FadeOutAnimationController.swift */,
 				7B580A8F1F1774A7005DD059 /* GradientView.swift */,
 				7B1CD4B41F18AB580024CE70 /* LandscapeViewController.swift */,
+				7BDF0FDF1F1D088200B21124 /* Search.swift */,
 				7B4D65541F0CCFA9004B8708 /* SearchResult.swift */,
 				7BB5695D1F0D3CD700577D79 /* SearchResultCell.swift */,
 				7BC011471F0BE382005EB73C /* SearchViewController.swift */,
@@ -175,6 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BDF0FE01F1D088200B21124 /* Search.swift in Sources */,
 				7BC011481F0BE382005EB73C /* SearchViewController.swift in Sources */,
 				7B0B495A1F16672B00454600 /* DimmingPresentationController.swift in Sources */,
 				7B1CD4B71F18CDB40024CE70 /* FadeOutAnimationController.swift in Sources */,
