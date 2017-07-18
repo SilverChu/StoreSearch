@@ -9,37 +9,35 @@
 /* Begin PBXBuildFile section */
 		7B0B49581F16611A00454600 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0B49571F16611A00454600 /* DetailViewController.swift */; };
 		7B0B495A1F16672B00454600 /* DimmingPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0B49591F16672B00454600 /* DimmingPresentationController.swift */; };
-		7B129A9E1F1365C6003147C8 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B129A9D1F1365C6003147C8 /* LoadingCell.xib */; };
 		7B1CD4B11F1879A70024CE70 /* BounceAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1CD4B01F1879A70024CE70 /* BounceAnimationController.swift */; };
 		7B1CD4B31F18A4540024CE70 /* SlideOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1CD4B21F18A4540024CE70 /* SlideOutAnimationController.swift */; };
 		7B1CD4B51F18AB580024CE70 /* LandscapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1CD4B41F18AB580024CE70 /* LandscapeViewController.swift */; };
 		7B1CD4B71F18CDB40024CE70 /* FadeOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1CD4B61F18CDB40024CE70 /* FadeOutAnimationController.swift */; };
 		7B33D8791F15F00100CAA04F /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B33D8781F15F00100CAA04F /* UIImageView+DownloadImage.swift */; };
 		7B4D65551F0CCFA9004B8708 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4D65541F0CCFA9004B8708 /* SearchResult.swift */; };
-		7B4D65571F0CECF5004B8708 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B4D65561F0CECF5004B8708 /* SearchResultCell.xib */; };
 		7B580A901F1774A7005DD059 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B580A8F1F1774A7005DD059 /* GradientView.swift */; };
-		7B8247B21F0DE53D005F58B1 /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B8247B11F0DE53D005F58B1 /* NothingFoundCell.xib */; };
 		7BB5695E1F0D3CD700577D79 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB5695D1F0D3CD700577D79 /* SearchResultCell.swift */; };
 		7BC011461F0BE382005EB73C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC011451F0BE382005EB73C /* AppDelegate.swift */; };
 		7BC011481F0BE382005EB73C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC011471F0BE382005EB73C /* SearchViewController.swift */; };
 		7BC0114B1F0BE382005EB73C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC011491F0BE382005EB73C /* Main.storyboard */; };
 		7BC0114D1F0BE382005EB73C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC0114C1F0BE382005EB73C /* Assets.xcassets */; };
 		7BDF0FE01F1D088200B21124 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF0FDF1F1D088200B21124 /* Search.swift */; };
+		7BE595E91F1E4EB20011738C /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BE595EB1F1E4EB20011738C /* NothingFoundCell.xib */; };
+		7BE595ED1F1E516C0011738C /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BE595EF1F1E516C0011738C /* LoadingCell.xib */; };
+		7BE595F41F1E54A90011738C /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BE595F61F1E54A90011738C /* SearchResultCell.xib */; };
+		7BE595F91F1E58130011738C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7BE595F71F1E58130011738C /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7B0B49571F16611A00454600 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		7B0B49591F16672B00454600 /* DimmingPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DimmingPresentationController.swift; sourceTree = "<group>"; };
-		7B129A9D1F1365C6003147C8 /* LoadingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
 		7B1CD4B01F1879A70024CE70 /* BounceAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BounceAnimationController.swift; sourceTree = "<group>"; };
 		7B1CD4B21F18A4540024CE70 /* SlideOutAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideOutAnimationController.swift; sourceTree = "<group>"; };
 		7B1CD4B41F18AB580024CE70 /* LandscapeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandscapeViewController.swift; sourceTree = "<group>"; };
 		7B1CD4B61F18CDB40024CE70 /* FadeOutAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeOutAnimationController.swift; sourceTree = "<group>"; };
 		7B33D8781F15F00100CAA04F /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
 		7B4D65541F0CCFA9004B8708 /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
-		7B4D65561F0CECF5004B8708 /* SearchResultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
 		7B580A8F1F1774A7005DD059 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
-		7B8247B11F0DE53D005F58B1 /* NothingFoundCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
 		7BB5695D1F0D3CD700577D79 /* SearchResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 		7BC011421F0BE382005EB73C /* StoreSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC011451F0BE382005EB73C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +46,14 @@
 		7BC0114C1F0BE382005EB73C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BC011511F0BE382005EB73C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BDF0FDF1F1D088200B21124 /* Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		7BE595EA1F1E4EB20011738C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NothingFoundCell.xib; sourceTree = "<group>"; };
+		7BE595EC1F1E4F8B0011738C /* nl */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = nl; path = nl.lproj/NothingFoundCell.xib; sourceTree = "<group>"; };
+		7BE595EE1F1E516C0011738C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LoadingCell.xib; sourceTree = "<group>"; };
+		7BE595F11F1E51880011738C /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/LoadingCell.strings; sourceTree = "<group>"; };
+		7BE595F31F1E533D0011738C /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Main.strings; sourceTree = "<group>"; };
+		7BE595F51F1E54A90011738C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SearchResultCell.xib; sourceTree = "<group>"; };
+		7BE595F81F1E58130011738C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7BE595FA1F1E58B50011738C /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,7 @@
 		7BC011441F0BE382005EB73C /* StoreSearch */ = {
 			isa = PBXGroup;
 			children = (
+				7BE595F71F1E58130011738C /* Localizable.strings */,
 				7BC011511F0BE382005EB73C /* Info.plist */,
 				7BC011451F0BE382005EB73C /* AppDelegate.swift */,
 				7B1CD4B01F1879A70024CE70 /* BounceAnimationController.swift */,
@@ -95,9 +102,9 @@
 				7B1CD4B21F18A4540024CE70 /* SlideOutAnimationController.swift */,
 				7B33D8781F15F00100CAA04F /* UIImageView+DownloadImage.swift */,
 				7BC0114C1F0BE382005EB73C /* Assets.xcassets */,
-				7B129A9D1F1365C6003147C8 /* LoadingCell.xib */,
-				7B8247B11F0DE53D005F58B1 /* NothingFoundCell.xib */,
-				7B4D65561F0CECF5004B8708 /* SearchResultCell.xib */,
+				7BE595EF1F1E516C0011738C /* LoadingCell.xib */,
+				7BE595EB1F1E4EB20011738C /* NothingFoundCell.xib */,
+				7BE595F61F1E54A90011738C /* SearchResultCell.xib */,
 				7BC011491F0BE382005EB73C /* Main.storyboard */,
 			);
 			path = StoreSearch;
@@ -147,6 +154,7 @@
 			knownRegions = (
 				en,
 				Base,
+				nl,
 			);
 			mainGroup = 7BC011391F0BE382005EB73C;
 			productRefGroup = 7BC011431F0BE382005EB73C /* Products */;
@@ -164,9 +172,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BC0114D1F0BE382005EB73C /* Assets.xcassets in Resources */,
-				7B129A9E1F1365C6003147C8 /* LoadingCell.xib in Resources */,
-				7B4D65571F0CECF5004B8708 /* SearchResultCell.xib in Resources */,
-				7B8247B21F0DE53D005F58B1 /* NothingFoundCell.xib in Resources */,
+				7BE595F91F1E58130011738C /* Localizable.strings in Resources */,
+				7BE595ED1F1E516C0011738C /* LoadingCell.xib in Resources */,
+				7BE595F41F1E54A90011738C /* SearchResultCell.xib in Resources */,
+				7BE595E91F1E4EB20011738C /* NothingFoundCell.xib in Resources */,
 				7BC0114B1F0BE382005EB73C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,8 +210,44 @@
 			isa = PBXVariantGroup;
 			children = (
 				7BC0114A1F0BE382005EB73C /* Base */,
+				7BE595F31F1E533D0011738C /* nl */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7BE595EB1F1E4EB20011738C /* NothingFoundCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BE595EA1F1E4EB20011738C /* en */,
+				7BE595EC1F1E4F8B0011738C /* nl */,
+			);
+			name = NothingFoundCell.xib;
+			sourceTree = "<group>";
+		};
+		7BE595EF1F1E516C0011738C /* LoadingCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BE595EE1F1E516C0011738C /* Base */,
+				7BE595F11F1E51880011738C /* nl */,
+			);
+			name = LoadingCell.xib;
+			sourceTree = "<group>";
+		};
+		7BE595F61F1E54A90011738C /* SearchResultCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BE595F51F1E54A90011738C /* Base */,
+			);
+			name = SearchResultCell.xib;
+			sourceTree = "<group>";
+		};
+		7BE595F71F1E58130011738C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BE595F81F1E58130011738C /* en */,
+				7BE595FA1F1E58B50011738C /* nl */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -212,6 +257,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -262,6 +308,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
