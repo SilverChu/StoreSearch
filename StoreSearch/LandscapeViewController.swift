@@ -78,6 +78,7 @@ class LandscapeViewController: UIViewController {
                 let searchResult = list[(sender as! UIButton).tag - 2000]
                 
                 detailViewController.searchResult = searchResult
+                detailViewController.isPopup = true
             }
         }
     }

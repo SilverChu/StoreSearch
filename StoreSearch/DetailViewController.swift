@@ -10,9 +10,16 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
-    var searchResult: SearchResult!
+    var searchResult: SearchResult! {
+        didSet {
+            if isViewLoaded {
+                updateUI()
+            }
+        }
+    }
     var downloadTask: URLSessionDownloadTask?
     var dismissAnimationStyle = AnimationStyle.fade // 参考enum AnimationStyle
+    var isPopup = false // 仅iPhone上Popup形式展示
     
     @IBOutlet weak var popupView: UIView!
     @IBOutlet weak var artworkImageView: UIImageView!
@@ -56,18 +63,36 @@ class DetailViewController: UIViewController {
         // Do any additional setup after loading the view.
         view.tintColor = UIColor(red: 20/255, green: 160/255, blue: 160/255, alpha: 1) // 设置当前view以前subview的着色
         popupView.layer.cornerRadius = 10 // 设置popupView的圆角弧度
-        
+        /*
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(close))
         
         gestureRecognizer.cancelsTouchesInView = false
         gestureRecognizer.delegate = self
         view.addGestureRecognizer(gestureRecognizer)
-        
+        */
         if searchResult != nil {
             updateUI() // 展示相应数据
         }
         
-        view.backgroundColor = UIColor.clear
+        // view.backgroundColor = UIColor.clear
+        
+        if isPopup {
+            let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(close))
+            
+            gestureRecognizer.cancelsTouchesInView = false
+            gestureRecognizer.delegate = self
+            view.addGestureRecognizer(gestureRecognizer)
+            
+            view.backgroundColor = UIColor.clear
+        } else {
+            view.backgroundColor = UIColor(patternImage: UIImage(named: "LandscapeBackground")!)
+            
+            popupView.isHidden = true
+            
+            if let displayName = Bundle.main.localizedInfoDictionary?["CFBundleDisplayName"] as? String {
+                title = displayName
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -116,6 +141,8 @@ class DetailViewController: UIViewController {
         if let largeURL = URL(string: searchResult.artworkLargeURL) {
             downloadTask = artworkImageView.loadImage(url: largeURL)
         }
+        
+        popupView.isHidden = false
     }
     
 }
